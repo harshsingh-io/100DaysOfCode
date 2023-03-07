@@ -1,12 +1,19 @@
 # Day 6
 
 Date Completed: March 7, 2023 2:00 AM
+
 Date Started: March 6, 2023 11:30 PM
+
 Difficulty: ⭐⭐⭐
+
 Done: Yes
+
 Languages: Java
+
 Related to Progress (Days): 6%
+
 Topic: Bridges in Graph, Flood Fill Algorithm, Tarjan’s Algorithm
+
 
 ## What I Learned Today
 
