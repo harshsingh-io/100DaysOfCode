@@ -49,6 +49,32 @@ Searching for a key is similar to the insert operation. However, It only **comp
 - In the former case, if the **isEndofWord** field of the last node is true, then the key exists in the trie.
 - In the second case, the search terminates without examining all the characters of the key, since the key is not present in the trie.
 
+**Word Break Problem (Hard)**
+
+Given an input string and a dictionary of words, find out if the input string can be segmented into a space-separated sequence of dictionary words. See following examples for more details.
+
+This is a famous Google interview question, also being asked by many other companies now a days.
+
+```
+Consider the following dictionary
+{ i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango}
+
+Input:  ilike
+Output: Yes
+The string can be segmented as "i like".
+
+Input:  ilikesamsung
+Output: Yes
+The string can be segmented as "i like samsung"
+or "i like sam sung".
+```
+
+**Recursive implementation:**
+
+The idea is simple, we consider each prefix and search for it in dictionary. If the prefix is present in dictionary, we recur for rest of the string (or suffix).
+
+If the recursive call for suffix returns true, we return true, otherwise we try next prefix. If we have tried all prefixes and none of them resulted in a solution, we return false.
+
 ### Quick Links
 
 ---
