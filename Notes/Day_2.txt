@@ -1,0 +1,47 @@
+Resource : https://www.youtube.com/watch?v=FtN3BYH2Zes
+
+
+What is Bellman-Ford Algorithm ?
+
+The Bellman-Ford algorithm is a dynamic programming algorithm used to find the shortest path between a single source vertex and all other vertices in a weighted directed graph. It can handle graphs with negative edge weights, which cannot be handled by Dijkstra's algorithm. 
+
+The algorithm works by maintaining an array of distances from the source vertex to all other vertices and iteratively relaxing all the edges in the graph. 
+
+It performs V-1 iterations, where V is the number of vertices in the graph, and checks for negative-weight cycles by performing one additional iteration. 
+
+The algorithm has a time complexity of O(V * E), making it less efficient than Dijkstra's algorithm, but necessary for handling graphs with negative edge weights.
+
+Why bellman ford algorithm arrived is there is already dijkstra algorithm?
+
+Bellman Ford's Algorithm works when there is negative weight edge, it also detects the negative weight cycle. Dijkstra's Algorithm may or may not work when there is negative weight edge. But will definitely not work when there is a negative weight cycle.
+
+
+Drawback :
+
+
+Find Minimum Depth of a Binary Tree
+
+
+We have a binary tree, find its minimum depth. The Minimum Depth is the number of nodes along the shortest path from the root node down to the nearest leaf node. For example, minimum height of below Binary Tree is 2.
+
+     1
+    / \
+   8    2
+  / \  /
+ 6  5 9
+
+Method 1 : DFS
+
+The idea is to traverse the given Binary Tree. For every node, check if it is a leaf node. If yes, then return 1. If not leaf node then if the left subtree is NULL, then recur for the right subtree. And if the right subtree is NULL, then recur for the left subtree. If both left and right subtrees are not NULL, then take the minimum of two heights.
+
+Method 2: BFS
+
+The above method may end up with complete traversal of Binary Tree even when the topmost leaf is close to root. A Better Solution is to do Level Order Traversal. While doing traversal, returns depth of the first encountered leaf node.
+
+In this Method, we first check if the root is null, and return 0 if it is. We then initialize a queue with the root and a depth variable to 1.
+
+We then enter a while loop that continues until the queue is empty. In each iteration of the loop, we retrieve the number of nodes in the current level of the tree, and iterate through each of those nodes. For each node, we check if it is a leaf node by checking if both its left and right child are null. If it is a leaf node, we return the current depth as the minimum depth of the tree.
+
+If the node is not a leaf node, we add its left and right child to the back of the queue if they exist. We then increment the depth variable for the next level of the tree.
+
+If the loop completes without finding a leaf node, we return the final depth as the minimum depth of the tree.
