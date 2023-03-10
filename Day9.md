@@ -70,7 +70,7 @@ Time complexity if this step also is O(N) where N is total number of characters 
 
 [**Unique Prefix Tutorial**](https://youtu.be/fpjfjNh658c)
 
-[**Documentation**](https://github.com/)
+[**Documentation**](https://www.geeksforgeeks.org/find-all-shortest-unique-prefixes-to-represent-each-word-in-a-given-list/)
 
 ## Code Snippets
 
