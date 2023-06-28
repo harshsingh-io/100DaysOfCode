@@ -10,7 +10,7 @@ Done: Yes
 
 Languages: Android Development, Kotlin, XML
 
-Related to Progress (Days): Your Progress (90%)
+Related to Progress (Days): Your Progress 90%
 
 Topic: Undo Functionality in Doodle It
 
